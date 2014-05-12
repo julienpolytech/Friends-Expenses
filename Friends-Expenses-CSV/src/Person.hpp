@@ -2,7 +2,7 @@
  * Person.hpp
  *
  *  Created on: Mar 13, 2014
- *      Author: Charles
+ *      Author: Salim
  */
 
 #ifndef PERSON_HPP_
