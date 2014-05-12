@@ -2,7 +2,7 @@
  * Group.hpp
  *
  *  Created on: Mar 13, 2014
- *      Author: Charles
+ *      Author: Salim
  */
 
 #ifndef GROUP_HPP_
