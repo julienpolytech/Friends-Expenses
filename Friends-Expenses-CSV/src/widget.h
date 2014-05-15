@@ -40,6 +40,7 @@ public slots:
     void Automatic();
     void Manual();
     void Clear();
+    void SaveAs();
 
 private:
     Ui::Widget *ui;
