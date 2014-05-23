@@ -44,6 +44,7 @@ Widget::Widget(QWidget *parent) :
     connect(ui->radioButton_Autoatique, SIGNAL(clicked()), this, SLOT(Automatic()));
     connect(ui->radioButton_Manuel, SIGNAL(clicked()), this, SLOT(Manual()));
     connect(ui->pushButton_clear, SIGNAL(clicked()), this, SLOT(Clear()));
+    connect(ui->pushButton_saveAs, SIGNAL(clicked()), this, SLOT(SaveAs()));
 
 }
 
@@ -339,6 +340,22 @@ void Widget::Browse()
 }
 
 
+void Widget::SaveAs()
+{
+    // Choix du chemin d'enregistrement
+    QString file = QFileDialog::getSaveFileName(this,"Enregister", QString(), ".csv");
+
+    // Enregistrement
+    QFile saveCSV(file +".csv");
+
+    QString CodeGENE = "eeeeeee";
+
+    if (saveCSV.open(QFile::WriteOnly))
+    {
+        QTextStream out(&saveCSV);
+        out << CodeGENE;
+    }
+}
 
 int Widget::FriendsExpenses() {
 
