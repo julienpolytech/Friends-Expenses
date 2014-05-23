@@ -2,7 +2,7 @@
  * Group.cpp
  *
  *  Created on: Mar 13, 2014
- *      Author: Charles
+ *      Author: Salim
  */
 
 #include "Group.hpp"
